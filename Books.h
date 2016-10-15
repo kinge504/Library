@@ -27,7 +27,7 @@ public:
 			sql::PreparedStatement *pstmt;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			cout << "Enter the title: ";
@@ -85,7 +85,7 @@ public:
 			sql::PreparedStatement *pstmt;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			cout << "Enter the first name: ";
@@ -134,7 +134,7 @@ public:
 			sql::ResultSet *res;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			stmt = con->createStatement();
@@ -162,7 +162,7 @@ public:
 			sql::ResultSet *res;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			stmt = con->createStatement();
@@ -191,7 +191,7 @@ public:
 			sql::PreparedStatement *pstmt;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			cout << "Enter the isbn of the book to check out: ";
@@ -231,7 +231,7 @@ public:
 			sql::PreparedStatement *pstmt;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			cout << "Enter the isbn of the book to check in: ";
@@ -267,7 +267,7 @@ public:
 			sql::PreparedStatement *pstmt;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			listAllBooks *list = new listAllBooks;
@@ -302,7 +302,7 @@ public:
 			sql::PreparedStatement *pstmt;
 
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("books");
 
 			listAllUsers *list = new listAllUsers;
